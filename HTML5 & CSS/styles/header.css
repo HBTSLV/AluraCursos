@@ -67,8 +67,8 @@
 
   .container__botao, 
   .container__titulo, 
-  .opcoes
-  .container__texto{
+  .opcoes,
+  .container__texto {
     display: none;
   } 
   
