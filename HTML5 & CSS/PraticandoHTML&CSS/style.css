@@ -126,7 +126,7 @@
         margin: 0.6em 0;
     }
 
-    .footer {
+    .footer { 
         text-align: center;
         margin: 5em 3em;
     }
@@ -152,8 +152,8 @@
      }
 
      .footer__lista a:active {
-        color: var(--cinza-secundario);
-     }
+         color: var(--cinza-secundario);
+    }
 
      .footer__texto {
         margin: 2em 0;
