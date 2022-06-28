@@ -1,6 +1,7 @@
     .destaques {
         background: var(--azul-claro);
         padding: 2.5rem 0 2rem 0;
+        margin: auto 0;
     }
 
     .destaques__titulo {
@@ -37,4 +38,8 @@
         color: var(--vermelho-forte);
         border-color: var(--vermelho-forte); 
         margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1024px) {
+
     }
