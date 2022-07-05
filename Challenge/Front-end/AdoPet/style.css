@@ -1,0 +1,28 @@
+:root {
+
+    /*--- CORES PRINCIPAIS ---*/
+
+    --azul-padrao: #3772FF;
+    --verde-padrao: #36D6AD;
+    --cor-botao: #FC7071;
+    --cor-botao-hover: #FF9D9E;
+    --cor-logo-creme: #FCF0E3;
+    --branco: #fff;
+
+    /*--- FONTES PRINCIPAIS --- */
+
+    --fonte-principal: "Poppins";
+
+}
+
+body {
+    background: var(--azul-padrao);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.botao {
+    background: var(--cor-botao);
+    color: var(--branco);
+}
