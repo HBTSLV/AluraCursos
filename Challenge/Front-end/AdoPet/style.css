@@ -1,3 +1,7 @@
+@import url("css/inicio.css");
+@import url("css/conteudo.css");
+@import url("css/rodape.css");
+
 :root {
 
     /*--- CORES PRINCIPAIS ---*/
@@ -8,21 +12,80 @@
     --cor-botao-hover: #FF9D9E;
     --cor-logo-creme: #FCF0E3;
     --branco: #fff;
+    --cor-sombra: #45454b;
 
     /*--- FONTES PRINCIPAIS --- */
 
     --fonte-principal: "Poppins";
+    --fonte-boas-vindas: "IMB Plex Sans";
 
+}
+
+* {
+    margin: 0 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: var(--azul-padrao);
     font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .botao {
+    justify-content: center;
+    text-align: center;
+    width: 12em;
+    margin: .5rem 0;
+    padding: .75rem;
+
     background: var(--cor-botao);
     color: var(--branco);
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 0px var(--cor-sombra);
+}
+
+/* --- Cabecalho --- */
+
+.cabecalho__container {
+    background:transparent ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.icones__container {
+    width: 100%;
+    text-align: start;
+    justify-content: center;
+}    
+.icones {
+    margin-left: 3rem;
+}
+
+.icone {
+    margin-left: 10rem;
+}
+
+.adopet__logo-header {
+    display: none;
 }

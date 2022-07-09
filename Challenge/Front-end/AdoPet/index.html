@@ -9,16 +9,53 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            
+        <!-- cabecalho -->
+        <header class="cabecalho__container">
+            <!-- logo da Adopet usada em tablet e desktop -->    
+            <div class="adopet__logo-header">
+                <img src="Images/Logo.svg" alt="Logo da AdoPet" class="logo__img">
+            </div>
+            <!-- icones do cabecalho-->
+            <div class="icones__container">
+                <a href="#" class="icones"><img src="Images/Icons/home.svg" alt="Icone da pagina Inicial"></a>
+                <a href="#" class="icones"><img src="Images/Icons/Msg.svg" alt="Icone de contato"></a>
+            </div>
         </header>
-        
-    </body>
-    <footer>
+        <!-- conteudo pricipal -->
+        <main class="container">
+            <!-- section principal-->
+            <section class="conteudo__container">
 
-    </footer>
+            <div class="logo__cont">
+                <img src="Images/Logo.svg" alt="Logo da AdoPet" class="logo__img-cont">
+            </div>
+            <div>
+                <h2 class="boas__vindas">Boas-vindas!</h2>
+            </div>
+
+            <!-- texto  principal-->
+            <div class="texto__container">
+                <p class="texto__principal">
+                    Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
+                </p>
+            </div>
+
+            <!-- botoes -->
+            <div class="botao__container">
+                <a href="#" class="botao">Já tenho conta</a>
+                <a href="#" class="botao">Quero me cadastrar</a>
+            </div>
+        </section>
+
+        </main>
+        
+        <footer class="rodape__container container">
+            <p class="texto__rodape">2022 - Desenvolvido por Alura.</p>
+        </footer>
+    </body>
 </html>
