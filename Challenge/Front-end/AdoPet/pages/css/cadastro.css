@@ -1,0 +1,76 @@
+:root {
+
+    /*--- CORES PRINCIPAIS ---*/
+    
+    --azul-padrao: #3772FF;
+    --verde-padrao: #36D6AD;
+    --cor-botao: #FC7071;
+    --cor-botao-hover: #FF9D9E;
+    --cor-logo-creme: #FCF0E3;
+    --branco: #fff;
+    --cor-sombra: #45454b;
+}
+
+
+body {
+    background: var(--branco);
+    background-image: 
+    url("../../Images/Body/Pata\ 3.svg"),
+    url("../../Images/Body/Pata\ 1.svg"),
+    url("../../Images/Body/Pata2.svg"),
+    url("../../Images/Body/linha-fundo.svg"), 
+    url("../../Images/Body/fundo-top.svg"),
+    url("../../images/Body/fundo-lateral.svg");
+    background-position: 
+    top -5px right 50px, /* Pata Laranja*/ 
+    top -5px right, /* Pata Marrom */ 
+    top 40px right, /* Pata Branca */
+    top left, /* linha fundo */
+    top left, /* top fundo */
+    left bottom 1%; /* fundo lateral */
+    background-size: 
+    auto, /* Pata Laranja*/ 
+    auto, /* Pata Marrom */
+    auto, /* Pata Branca */
+    auto, /* linha fundo */
+    auto, /* top fundo */
+    6rem;  /* fundo lateral */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo__container {
+    text-align: center;
+    margin: 50px auto 0 ;
+}
+
+.logo__img-cont {
+    width: 10rem;
+    box-sizing: border-box;
+}
+
+.texto__cadastro {
+    text-align: center;
+    margin: 1rem auto;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul-padrao);
+
+    width: 90%;
+}
+
+/* --- Rodapé --- */
+
+.texto__rodape {
+    padding: 2.5em;
+    text-align: center;
+
+    background: var(--verde-padrao);
+    color: var(--branco);
+
+    font-weight: 400;
+    font-size: 16px;
+}

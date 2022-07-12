@@ -6,7 +6,7 @@ body {
         url("../Images/Body/fundo-top.svg"),
         url("../Images/Body/Ilustração-Pets.svg"),
         url("../images/Body/fundo-lateral.png");
-    background-position: top left, top left, center bottom 70px, right -15px bottom 300px;
+    background-position: top left, top left, center bottom 80px, right -15px bottom 300px;
     background-repeat: no-repeat;
     background-size: auto, auto, auto, 75px;
 }
@@ -20,7 +20,7 @@ body {
     margin: auto;
 }
 
-.logo__cont {
+.logo__container {
     margin: 15% auto;
 }
 

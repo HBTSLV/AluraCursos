@@ -10,8 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href= "css/inicio.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href= "css/login.css">
     </head>
 
     <body>
@@ -19,39 +19,36 @@
         <header class="cabecalho__container">
             <!-- logo da Adopet usada em tablet e desktop -->    
             <div class="adopet__logo-header">
-                <img src="Images/Logo.svg" alt="Logo da AdoPet" class="logo__img">
+                <img src="../Images/Logo.svg" alt="Logo da AdoPet" class="logo__img">
             </div>
             <!-- icones do cabecalho-->
             <div class="icones__container">
-                <a href="#" class="icones"><img src="Images/Icons/home.svg" alt="Icone da pagina Inicial"></a>
-                <a href="#" class="icones"><img src="Images/Icons/Msg.svg" alt="Icone de contato"></a>
+                <a href="../index.html" class="icones"><img src="../Images/Icons/home.svg" alt="Icone da pagina Inicial"></a>
+                <a href="#" class="icones"><img src="../Images/Icons/Msg.svg" alt="Icone de contato"></a>
             </div>
         </header>
         <!-- conteudo pricipal -->
         <main class="container">
-            <!-- section principal-->
-            <section class="conteudo__container">
 
             <div class="logo__container">
-                <img src="Images/Logo.svg" alt="Logo da AdoPet" class="logo__img-cont">
-            </div>
-            <div>
-                <h2 class="boas__vindas">Boas-vindas!</h2>
+                <img src="../Images/Logos-azul.svg" alt="Logo da AdoPet" class="logo__img-cont">
             </div>
 
-            <!-- texto  principal-->
-            <div class="texto__container">
-                <p class="texto__principal">
-                    Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
-                </p>
-            </div>
+            <p class="texto__cadastro">
+                Já tem conta? Faça seu login:
+            </p>
 
-            <!-- botoes -->
-            <div class="botao__container">
-                <a href="pages/login.html" class="botao">Já tenho conta</a>
-                <a href="pages/cadastro.html" class="botao">Quero me cadastrar</a>
-            </div>
-        </section>
+            <!-- Formulário -->
+            <form class="formulario__container">
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Insira seu Email" required>
+
+                <label for="Senha">Senha</label>
+                <input type="password" id="nomesobrenome" placeholder="Insira sua Senha" class="passholder" required>
+
+                <input type="submit" value="Entrar" class="botao__input botao">
+            </form>
 
         </main>
         

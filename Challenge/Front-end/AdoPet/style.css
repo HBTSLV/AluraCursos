@@ -1,6 +1,3 @@
-@import url("css/inicio.css");
-@import url("css/conteudo.css");
-@import url("css/rodape.css");
 
 :root {
 
@@ -12,36 +9,38 @@
     --cor-botao-hover: #FF9D9E;
     --cor-logo-creme: #FCF0E3;
     --branco: #fff;
-    --cor-sombra: #45454b;
-
+    --cor-sombra: rgba(0, 0, 0, 0.15);
+    --cor-fonte-cinza: #737380;
+    --cor-fonte-cinza-claro: #BCBCBC;
+    
     /*--- FONTES PRINCIPAIS --- */
 
-    --fonte-principal: "Poppins";
-    --fonte-boas-vindas: "IMB Plex Sans";
+    --fonte-principal: 'Poppins';
+    --fonte-boas-vindas: 'IMB Plex Sans';
 
 }
 
 * {
-    margin: 0 0;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+html{
+    height: 100%;
+}
 body {
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 18px;
-
+    font-size: 16px;
+    
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .container {
     width: 100%;
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 .botao {
@@ -54,32 +53,43 @@ body {
     background: var(--cor-botao);
     color: var(--branco);
     border-radius: 6px;
-
+    
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 1px 1px 1px 0px var(--cor-sombra);
+    box-shadow: 0px 2px 2px var(--cor-sombra);
+}
+
+.botao__input {
+    width: 9rem;
+    margin: 2rem auto;
+    position: relative;
+    padding: 0;
+    justify-self: center;
+    text-align: center;
+    font-family: var(--fonte-principal);
 }
 
 /* --- Cabecalho --- */
 
 .cabecalho__container {
-    background:transparent ;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7rem;
-    width: 100vw;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .icones__container {
-    width: 100%;
-    text-align: start;
-    justify-content: center;
+    width: 100vw;
+    position: relative;
+    text-align: left;
+    justify-content: left;
 }    
 .icones {
-    margin-left: 3rem;
+    margin-left: 2em;
 }
 
 .icone {
@@ -88,4 +98,45 @@ body {
 
 .adopet__logo-header {
     display: none;
+}
+
+/* Formulario */
+
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto 10rem;
+    height: 500px;
+}
+
+.formulario__container label {
+    font-size: 16px;
+    margin: 20px auto 5px;
+    color: var(--cor-fonte-cinza);
+}
+
+.formulario__container input {
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0px 2px 2px var(--cor-sombra);
+    height: 40px;
+}
+
+.formulario__container input::placeholder {
+    text-align: center;
+
+
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cor-fonte-cinza);
+}
+
+.formulario__container .passholder::placeholder {
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-image: url("Images/Icons/Pass_icon.svg");
+    background-size: 18px;
 }

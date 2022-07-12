@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>AdoPet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href= "css/cadastro.css">
+    </head>
+
+    <body>
+        <!-- cabecalho -->
+        <header class="cabecalho__container">
+            <!-- logo da Adopet usada em tablet e desktop -->    
+            <div class="adopet__logo-header">
+                <img src="../Images/Logo.svg" alt="Logo da AdoPet" class="logo__img">
+            </div>
+            <!-- icones do cabecalho-->
+            <div class="icones__container">
+                <a href="../index.html" class="icones"><img src="../Images/Icons/home.svg" alt="Icone da pagina Inicial"></a>
+                <a href="#" class="icones"><img src="../Images/Icons/Msg.svg" alt="Icone de contato"></a>
+            </div>
+        </header>
+        <!-- conteudo pricipal -->
+        <main class="container">
+
+            <div class="logo__container">
+                <img src="../Images/Logos-azul.svg" alt="Logo da AdoPet" class="logo__img-cont">
+            </div>
+
+            <p class="texto__cadastro">
+                Ainda não tem cadastro?<br><br>
+                Então, antes de buscar seu melhor 
+                amigo, precisamos de alguns dados:
+            </p>
+
+            <!-- Formulário -->
+            <form class="formulario__container">
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Escolha seu melhor email" required>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="Senha">Senha</label>
+                <input type="password" id="nomesobrenome" placeholder="Crie uma senha" class="passholder" required>
+
+                <label for="ConfSenha">Confirme sua senha</label>
+                <input type="password" id="ConfSenha" placeholder="Repita a senha criada acima" class="passholder" required>
+
+                <input type="submit" value="Cadastrar" class="botao__input botao">
+            </form>
+
+        </main>
+        
+        <footer class="rodape__container">
+            <p class="texto__rodape">2022 - Desenvolvido por Alura.</p>
+        </footer>
+    </body>
+</html>
