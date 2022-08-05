@@ -1,0 +1,110 @@
+:root {
+
+    /*--- CORES PRINCIPAIS ---*/
+    
+    --azul-padrao: #3772FF;
+    --verde-padrao: #36D6AD;
+    --cor-botao: #FC7071;
+    --cor-botao-hover: #FF9D9E;
+    --cor-logo-creme: #FCF0E3;
+    --branco: #fff;
+    --cor-sombra: #45454b;
+    --cor-fonte-cinza: #737380;
+    --cor-fonte-cinza-claro: #BCBCBC;
+}
+
+
+body {
+    background: var(--branco);
+    background-image: 
+    url("../../Images/Body/linha-fundo.svg"), 
+    url("../../Images/Body/fundo-top.svg");
+    background-position: 
+    top left, /* linha fundo */
+    top left; /* top fundo */
+    background-size: 
+    auto, /* linha fundo */
+    auto; /* top fundo */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__pets-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__texto {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 14rem;
+
+    color: var(--azul-padrao);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cards__container {
+    margin: 50px 0;
+    display: flex;
+    width: 360px;
+}
+
+.card__img{
+    width: 148px;
+    margin: 0 1rem;
+}
+
+.card {
+    box-sizing: border-box;
+    height: 1rem;
+}
+
+.pet__nome {
+    color: var(--azul-padrao);
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.lista__descricao{
+    display: inline-block;
+    margin: 0 0 15px;
+    color: var(--cor-fonte-cinza);
+    font-size: 14px;
+    list-style: none;
+}
+
+.pet__cidade {
+    color: var(--cor-fonte-cinza);
+    font-size: 12px;
+}
+
+.link__contato {
+    margin-top: 5px;
+    color: var(--cor-fonte-cinza);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+}
+
+.link__contato img {
+    margin: 0 10px 0 0;
+}
+
+
+/* --- Rodapé --- */
+
+.texto__rodape {
+    padding: 2.5em;
+    text-align: center;
+
+    background: var(--verde-padrao);
+    color: var(--branco);
+
+    font-weight: 400;
+    font-size: 16px;
+}

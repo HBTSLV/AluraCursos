@@ -36,11 +36,11 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .container {
     width: 100%;
-    flex-grow: 1;
 }
 
 .botao {
@@ -107,7 +107,7 @@ body {
     flex-direction: column;
     text-align: center;
     width: 90%;
-    margin: 1rem auto 10rem;
+    margin: 1rem auto 4rem;
     height: 500px;
 }
 
