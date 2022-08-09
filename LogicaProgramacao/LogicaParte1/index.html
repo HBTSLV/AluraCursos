@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <meta charset="UTF-8">
 
 <h1>Meu primeiro teste!</h1>
@@ -6,8 +7,33 @@ Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com
 
 <script>
 
-    alert("Isso sim é um programa");
+    alert("[**ATENÇÂO**] Neste arquivo parecera bagunçado no front,mas está especificado tudo no back (OBS:Não levem essa parte do curso a sério,pois o foco dele está no back-end)");
     document.write("<br><br> Teste de gravação no documento via JavaScript");
     // document.write(""); esse comando grava tudo oque for colocado dentro do PARAMETRO no HTML, ainda é possivél execultar operações matemáticas
 
+    // Aqui esta um exemplo de uma operação matemática
+    document.write("Robson so valor dos seus gasto são: " + "<b>" + (200 + 100 + 300 + 400) / 4 + "</b>");
+
+    // Exemplo de concatenação com operaão de porcentagem
+    document.write("<br><br> Rafaela Acertou: " + 15/50*100 +"%");
+
+    // exercicio para reduzir o codigo tirar a linha <br> e coloca-lo em uma linha só:
+    document.write("<br><br>" + "Flávio nasceu em " + (2016 - 39));
+    // document.write("<br>");
+    document.write("<br>" + "Joaquim nasceu em " + (2016 - 20));
+    // document.write("<br>");
+    document.write("<br>" + "Barney nasceu em " + (2016 - 40));
+    // Resolvi coloca-lo na frente do nome separa do texto, pois tem facilitado a leitura na miha opnião
+
+    // Nesta Parte do curso começamos a usar variaveis
+    var ano = 2016;
+
+    document.write("<br><br>" + "Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
 </script>
