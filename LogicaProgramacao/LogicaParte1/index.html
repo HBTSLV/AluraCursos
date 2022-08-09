@@ -9,23 +9,23 @@ Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com
 
     alert("[**ATENÇÂO**] Neste arquivo parecera bagunçado no front,mas está especificado tudo no back (OBS:Não levem essa parte do curso a sério,pois o foco dele está no back-end)");
     document.write("<br><br> Teste de gravação no documento via JavaScript");
-    // document.write(""); esse comando grava tudo oque for colocado dentro do PARAMETRO no HTML, ainda é possivél execultar operações matemáticas
+    // document.write(""); esse comando grava tudo oque for colocado dentro do PARAMETRO no HTML, ainda é possivél execultar operações matemáticas.
 
-    // Aqui esta um exemplo de uma operação matemática
+    // Aqui esta um exemplo de uma operação matemática.
     document.write("Robson so valor dos seus gasto são: " + "<b>" + (200 + 100 + 300 + 400) / 4 + "</b>");
 
-    // Exemplo de concatenação com operaão de porcentagem
+    // Exemplo de concatenação com operaão de porcentagem.
     document.write("<br><br> Rafaela Acertou: " + 15/50*100 +"%");
 
-    // exercicio para reduzir o codigo tirar a linha <br> e coloca-lo em uma linha só:
+    // exercicio para reduzir o codigo tirar a linha <br> e coloca-lo em uma linha só.
     document.write("<br><br>" + "Flávio nasceu em " + (2016 - 39));
     // document.write("<br>");
     document.write("<br>" + "Joaquim nasceu em " + (2016 - 20));
     // document.write("<br>");
     document.write("<br>" + "Barney nasceu em " + (2016 - 40));
-    // Resolvi coloca-lo na frente do nome separa do texto, pois tem facilitado a leitura na miha opnião
+    // Resolvi coloca-lo na frente do nome separa do texto, pois tem facilitado a leitura na miha opnião.
 
-    // Nesta Parte do curso começamos a usar variaveis
+    // Nesta Parte do curso começamos a usar variaveis.
     var ano = 2016;
 
     document.write("<br><br>" + "Flávio tem " + (ano - 1977) + " anos");
@@ -36,4 +36,53 @@ Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com
     ano = 2017;
     document.write("Barney tem " + (ano - 1976) + " anos");
     document.write("<br>");
+
+    // Exercicio de variaveis 1.Trocar o valor de n sem muda-lo no parametro.
+    var n = 3;
+
+    document.write("<br><br>" + "O resultado da fórmula é : " + n * (10 / 20)  );
+
+    // Exercicio de variaveis 2. Conserta o erro no nome declarado da variavel.
+    var minhaidade = 20;
+    // var minhaIdade = 20;
+
+    document.write("<br><br>" + "Eu nasci em " + (2016 - minhaidade) );  
+
+    // Exercicio de variaveis 3. trocamos os valores por uma variavel para faciitar a troca do multiplicador.
+    var tabuada = 8;
+    document.write("<br><br>" + tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
+    document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
+    document.write(tabuada + " vezes 3 é " + tabuada * 3 + "<br>");
+    document.write(tabuada + " vezes 4 é " + tabuada * 4 + "<br>");
+    document.write(tabuada + " vezes 5 é " + tabuada * 5 + "<br>");
+    document.write(tabuada + " vezes 6 é " + tabuada * 6 + "<br>");
+    document.write(tabuada + " vezes 7 é " + tabuada * 7 + "<br>");
+    document.write(tabuada + " vezes 8 é " + tabuada * 8 + "<br>");
+    document.write(tabuada + " vezes 9 é " + tabuada * 9 + "<br>");
+    document.write(tabuada + " vezes 10 é " + tabuada * 10 + "<br>");
+
+    // original:
+    // document.write("5 vezes 1 é " + 5 * 1+ "<br>");
+    // document.write("5 vezes 2 é " + 5 * 2+ "<br>");
+    // document.write("5 vezes 3 é " + 5 * 3+ "<br>");
+    // document.write("5 vezes 4 é " + 5 * 4+ "<br>");
+    // document.write("5 vezes 5 é " + 5 * 5+ "<br>");
+    // document.write("5 vezes 6 é " + 5 * 6+ "<br>");
+    // document.write("5 vezes 7 é " + 5 * 7+ "<br>");
+    // document.write("5 vezes 8 é " + 5 * 8+ "<br>");
+    // document.write("5 vezes 9 é " + 5 * 9+ "<br>");
+    // document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+
+    // Exercicio 4. trocar os valores por variaveis com os nome de cada valor atribuido.
+    document.write ("<br><br>");
+    
+    var idadeLinda = 12
+    var idadeGuaraciara = 15
+    var idadePérola = 13
+    var mediaIdade = (idadeLinda + idadeGuaraciara + idadePérola) / 3;
+
+    document.write(Math.round(mediaIdade));
+
+    // Original
+    // document.write( (12 + 15 + 13) / 3);
 </script>
