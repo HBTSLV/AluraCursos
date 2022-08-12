@@ -6,83 +6,129 @@
 Seria isso um programa? Descubra visitando o Alura <a href="http://www.alura.com.br">aqui</a>!
 
 <script>
+    // funções serve para facilitar o uso de varios comandos para evitar a repetir o codigo
+    // para criar uma função no JS precisar ter um verbo que condiz com a função execultada
+    // digite function nomeDela() {Dentro de chaves colocamos os comandos a serem exexultado quando ela for chamada}
+    // para chamar um  função é só digitar o nome da função assim nomeDela(). dentro do codigo ou melhor dizendo onde for necessário ser chamada
+    function pulaLinha() {
+       document.write("<br>");
+    }
 
-    alert("[**ATENÇÂO**] Neste arquivo parecera bagunçado no front,mas está especificado tudo no back (OBS:Não levem essa parte do curso a sério,pois o foco dele está no back-end)");
-    document.write("<br><br> Teste de gravação no documento via JavaScript");
-    // document.write(""); esse comando grava tudo oque for colocado dentro do PARAMETRO no HTML, ainda é possivél execultar operações matemáticas.
+    // para que a função receba um parametro é preciso prepara-la. se em () ao lado do nome dado a função colocar-mos algum parametro e dentro do bloco da mesma 
+    // Se algum comando em meio ao codigo precisar do argumento dado em uma chamada da função, para o parametro ser execultado precisa colocalo no codigo que fica dentro do bloco da função para recebert.Veja o Exemplo abaixo
+
+    function mostra(frase) {
+        document.write(frase)
+    }
+
+    // alert("[**ATENÇÂO**] Neste arquivo parecera bagunçado no front,mas está especificado tudo no back (OBS:Não levem essa parte do curso a sério,pois o foco dele está no back-end)");
+    pulaLinha();
+    mostra("Teste de gravação no documento via JavaScript");
+    pulaLinha();
+    // mostra(""); esse comando grava tudo oque for colocado dentro do PARAMETRO no HTML, ainda é possivél execultar operações matemáticas.
 
     // Aqui esta um exemplo de uma operação matemática.
-    document.write("Robson so valor dos seus gasto são: " + "<b>" + (200 + 100 + 300 + 400) / 4 + "</b>");
+    pulaLinha();
+    mostra("Robson so valor dos seus gasto são: " + "<b>" + (200 + 100 + 300 + 400) / 4 + "</b>");
+    pulaLinha();
 
     // Exemplo de concatenação com operaão de porcentagem.
-    document.write("<br><br> Rafaela Acertou: " + 15/50*100 +"%");
-
+    pulaLinha();
+    mostra("Rafaela Acertou: " + 15/50*100 +"%");
+    pulaLinha();
     // exercicio para reduzir o codigo tirar a linha <br> e coloca-lo em uma linha só.
-    document.write("<br><br>" + "Flávio nasceu em " + (2016 - 39));
-    // document.write("<br>");
-    document.write("<br>" + "Joaquim nasceu em " + (2016 - 20));
-    // document.write("<br>");
-    document.write("<br>" + "Barney nasceu em " + (2016 - 40));
+    mostra("Flávio nasceu em " + (2016 - 39));
+    pulaLinha();
+    // mostra("<br>");
+    mostra("Joaquim nasceu em " + (2016 - 20));
+    pulaLinha();
+    // mostra("<br>");
+    mostra("Barney nasceu em " + (2016 - 40));
+    pulaLinha();
     // Resolvi coloca-lo na frente do nome separa do texto, pois tem facilitado a leitura na miha opnião.
 
     // Nesta Parte do curso começamos a usar variaveis.
     var ano = 2016;
-
-    document.write("<br><br>" + "Flávio tem " + (ano - 1977) + " anos");
-    document.write("<br>");
-    document.write("Joaquim tem " + (ano - 1996) + " anos");
-    document.write("<br>");
-
+    pulaLinha();
+    mostra("Flávio tem " + (ano - 1977) + " anos");
+    pulaLinha();
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
+    pulaLinha();
     ano = 2017;
-    document.write("Barney tem " + (ano - 1976) + " anos");
-    document.write("<br>");
-
+    mostra("Barney tem " + (ano - 1976) + " anos");
+    pulaLinha();
     // Exercicio de variaveis 1.Trocar o valor de n sem muda-lo no parametro.
     var n = 3;
 
-    document.write("<br><br>" + "O resultado da fórmula é : " + n * (10 / 20)  );
-
+    mostra("O resultado da fórmula é : " + n * (10 / 20)  );
+    pulaLinha();
     // Exercicio de variaveis 2. Conserta o erro no nome declarado da variavel.
-    var minhaidade = 20;
+    var minhaidade = 24;
     // var minhaIdade = 20;
-
-    document.write("<br><br>" + "Eu nasci em " + (2016 - minhaidade) );  
-
+    pulaLinha();
+    mostra("Eu nasci em " + (2022 - minhaidade) );  
+    pulaLinha();
     // Exercicio de variaveis 3. trocamos os valores por uma variavel para faciitar a troca do multiplicador.
     var tabuada = 8;
-    document.write("<br><br>" + tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
-    document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
-    document.write(tabuada + " vezes 3 é " + tabuada * 3 + "<br>");
-    document.write(tabuada + " vezes 4 é " + tabuada * 4 + "<br>");
-    document.write(tabuada + " vezes 5 é " + tabuada * 5 + "<br>");
-    document.write(tabuada + " vezes 6 é " + tabuada * 6 + "<br>");
-    document.write(tabuada + " vezes 7 é " + tabuada * 7 + "<br>");
-    document.write(tabuada + " vezes 8 é " + tabuada * 8 + "<br>");
-    document.write(tabuada + " vezes 9 é " + tabuada * 9 + "<br>");
-    document.write(tabuada + " vezes 10 é " + tabuada * 10 + "<br>");
+    pulaLinha();
+    mostra(tabuada + " vezes 1 é " + tabuada * 1);
+    pulaLinha();
+    mostra(tabuada + " vezes 2 é " + tabuada * 2);
+    pulaLinha();
+    mostra(tabuada + " vezes 3 é " + tabuada * 3);
+    pulaLinha();
+    mostra(tabuada + " vezes 4 é " + tabuada * 4);
+    pulaLinha();
+    mostra(tabuada + " vezes 5 é " + tabuada * 5);
+    pulaLinha();
+    mostra(tabuada + " vezes 6 é " + tabuada * 6);
+    pulaLinha();
+    mostra(tabuada + " vezes 7 é " + tabuada * 7);
+    pulaLinha();
+    mostra(tabuada + " vezes 8 é " + tabuada * 8);
+    pulaLinha();
+    mostra(tabuada + " vezes 9 é " + tabuada * 9);
+    pulaLinha();
+    mostra(tabuada + " vezes 10 é " + tabuada * 10);
+    pulaLinha();
 
     // original:
-    // document.write("5 vezes 1 é " + 5 * 1+ "<br>");
-    // document.write("5 vezes 2 é " + 5 * 2+ "<br>");
-    // document.write("5 vezes 3 é " + 5 * 3+ "<br>");
-    // document.write("5 vezes 4 é " + 5 * 4+ "<br>");
-    // document.write("5 vezes 5 é " + 5 * 5+ "<br>");
-    // document.write("5 vezes 6 é " + 5 * 6+ "<br>");
-    // document.write("5 vezes 7 é " + 5 * 7+ "<br>");
-    // document.write("5 vezes 8 é " + 5 * 8+ "<br>");
-    // document.write("5 vezes 9 é " + 5 * 9+ "<br>");
-    // document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+    // mostra("5 vezes 1 é " + 5 * 1+ "<br>");
+    // mostra("5 vezes 2 é " + 5 * 2+ "<br>");
+    // mostra("5 vezes 3 é " + 5 * 3+ "<br>");
+    // mostra("5 vezes 4 é " + 5 * 4+ "<br>");
+    // mostra("5 vezes 5 é " + 5 * 5+ "<br>");
+    // mostra("5 vezes 6 é " + 5 * 6+ "<br>");
+    // mostra("5 vezes 7 é " + 5 * 7+ "<br>");
+    // mostra("5 vezes 8 é " + 5 * 8+ "<br>");
+    // mostra("5 vezes 9 é " + 5 * 9+ "<br>");
+    // mostra("5 vezes 10 é " + 5 * 10+ "<br>");
 
     // Exercicio 4. trocar os valores por variaveis com os nome de cada valor atribuido.
-    document.write ("<br><br>");
     
     var idadeLinda = 12
     var idadeGuaraciara = 15
     var idadePérola = 13
     var mediaIdade = (idadeLinda + idadeGuaraciara + idadePérola) / 3;
 
-    document.write(Math.round(mediaIdade));
+    mostra(Math.round(mediaIdade));
 
     // Original
-    // document.write( (12 + 15 + 13) / 3);
+    // mostra( (12 + 15 + 13) / 3);
+
+    // aqui esta um exemplo de das funções aprendidas no modulo 4
+    pulaLinha();
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    var minhaIdade = 18;
+    var idadeIrmao = 15;
+
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao) + " anos");
+    pulaLinha();
 </script>

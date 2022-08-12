@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<h3>Calculo de quantas gerações passaram desde 1500 até 2022</h3>
+
+<script>
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function pulaLinha() {
+        document.write("<br><br>")
+    }
+
+    var anoChegada = 1500
+    var anoAtual = 2022
+    var mediaGerecao = 28
+    var quantidadeGeracao = (anoAtual - anoChegada) / mediaGerecao;
+
+    mostra("Já parou para pensar? Em quantas gerações se passaram desde a descoberta do Brasil?");
+    pulaLinha();
+    mostra("<big>Aqui está a resposta: se passaram " + Math.round(quantidadeGeracao) + " gerações desde quando os portugueses descobriram o nosso pais.</big>");
+
+    // Correção
+
+    // <meta charset="UTF-8">
+
+    // <script>
+    //     function pulaLinha() {
+    //         document.write("<br>");
+    //     }
+
+    //     function mostra(frase) {
+    //         document.write(frase);
+    //         pulaLinha();
+    //     }
+
+    //     var idadeMediaQuandoTemFilhos = 28;
+    //     var anoAtual = 2016; 
+
+    //     var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+    //     mostra(quantidadeDeGeracoes);
+
+</script>
