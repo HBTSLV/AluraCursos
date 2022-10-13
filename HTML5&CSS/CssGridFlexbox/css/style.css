@@ -37,7 +37,6 @@ body {
     align-items: center;
     background-color: var(--cor-menu-lateral);
     padding: 8px 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .cabecalho__menu i::before {

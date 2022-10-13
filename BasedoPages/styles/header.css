@@ -1,11 +1,15 @@
   .cabeçalho_menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("/icons/Menu-Aberto.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     display: inline-block;
   }
+
+  .cabeçalho_menu-hamburguer{
+    content: "\e904";
+    text-decoration-color: blueviolet;
+    font-size: 24px;
+}
+
 
   .container__botao:checked~.container__label>.cabeçalho_menu-hamburguer {
     background-image: url("/icons/Menu.svg");
