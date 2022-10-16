@@ -1,5 +1,5 @@
 .populares {
-    padding: 3rem 2rem;
+    padding: 3rem 0;
 }
 
 .populares__titulo {
@@ -69,7 +69,7 @@
 }
 
 .populares__card___data {
-    color: #808080';
+    color: #808080;
     font-size: .9rem;
 }
 
