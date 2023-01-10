@@ -1,0 +1,13 @@
+@import url('receita/receita.css');
+@import url('receita/receita-botao.css');
+@import url('receita/receita-imagem.css');
+@import url('receita/receita-titulo.css');
+@import url('receita/receita-conteudo.css');
+@import url('receita/receita-descricao.css');
+
+.receitas {
+  background: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 5rem;
+}

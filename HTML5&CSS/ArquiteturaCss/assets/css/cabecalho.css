@@ -1,6 +1,6 @@
-@import url('menu/menu-lista.css');
-@import url('menu/menu-link.css');
 @import url('menu/menu-item.css');
+@import url('menu/menu-link.css');
+@import url('menu/menu-lista.css');
 
 .cabecalho {
   align-items: center;
