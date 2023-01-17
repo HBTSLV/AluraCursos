@@ -6,5 +6,17 @@
 @import url('sobre/sobre-titulo.css');
 @import url('sobre/sobre-descricao.css');
 
-@import url('receitas/receitas-pai.css') 
+@import url('receitas/receitas-pai.css');
+
+@import url("quemSomos/quemSomos.css");
+@import url("quemSomos/quemSomos-titulo.css");
+@import url("quemSomos/quemSomos-descricao.css");
+
+@import url('pessoa/pessoas-pai.css');
+@import url('pessoa/pessoa.css');
+@import url('pessoa/pessoa-nome.css');
+@import url('pessoa/pessoa-funcao.css');
+@import url('pessoa/pessoa-imagem.css');
+
+@import url('rodape.css')
 
