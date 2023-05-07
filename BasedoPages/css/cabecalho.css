@@ -2,6 +2,7 @@
   align-items: center;
   display: flex; 
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -33,7 +34,7 @@
 }
 
 .menu__link:hover {
-  color: #1AB8D9;
+  color: #DFBEEF;
   text-decoration: underline;
 }
 
